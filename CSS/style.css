@@ -90,6 +90,7 @@ h4 {
 .boton-amarillo {
   background-color: #E08709;
   display: block;
+
 }
 
 .boton-verde {
@@ -177,10 +178,10 @@ text-transform: uppercase;
 }
 
 .anuncio {
-  flex: 0 0 calc (33.3% - 1rem);
+  flex: 0 0 calc(33.3% - 1rem);
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: calc (33.3% - 1rem);
+  flex-basis: calc(33.3% - 1rem);
   border: 1px solid #b5b5b5;
   background-color: #f5f5f5;
   margin-bottom: 2rem;
@@ -244,7 +245,7 @@ text-transform: uppercase;
 }
 .contenido-contacto p {
   font-size: 2rem;
-
+}
 
 /** Seccion inferior **/
 
@@ -255,10 +256,9 @@ text-transform: uppercase;
 
 .seccion-inferior .blog {
   flex-basis: 60%
-
 }
 
-.seccion-inferior .testimoniales {
+.seccion-inferior .testimoniales {  
   flex-basis: calc(40% - 2rem)
 }
 
@@ -305,7 +305,7 @@ text-transform: uppercase;
 .testimonial {
   background-color: #71b100;
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
   color: #ffffff;
   border-radius: 2rem;
 }
@@ -315,12 +315,18 @@ text-transform: uppercase;
 }
 
 .testimonial blockquote::before {
-  
+  content: '';
+  background-image: url(../img/comilla.svg);
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: -4rem;
 }
 
+  
 .testimonial blockquote {
   position: relative;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 /** Footer **/
